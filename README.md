@@ -25,3 +25,6 @@ To run the executable, use the following command:
 ```bash
 ./app
 ```
+
+## 💻 Application
+![image](https://github.com/user-attachments/assets/b03d63f6-0540-4bca-b459-1bfa5f61e490)
