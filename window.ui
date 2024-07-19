@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkWindow" id="window">
+    <property name="title" translatable="1">Farm Manager</property>
+    <property name="child">
+      <object class="GtkBox" id="box">
+        <property name="orientation">vertical</property>
+        <property name="spacing">4</property>
+        <child>
+          <object class="GtkLabel" id="farmtitle">
+            <property name="label" translatable="1">Farm Manager</property>
+            <property name="xalign">0.009999999776482582</property>
+            <attributes>
+              <attribute name="font-desc" value="System-ui Bold 40"></attribute>
+              <attribute name="background" value="#ffffffffffff"></attribute>
+            </attributes>
+          </object>
+        </child>
+        <child>
+          <object class="GtkNotebook" id="mainnotebook">
+            <property name="focusable">1</property>
+            <property name="tab-pos">left</property>
+            <property name="show-border">0</property>
+            <child>
+              <object class="GtkNotebookPage">
+                <property name="child">
+                  <object class="GtkBox" id="cropbox">
+                    <property name="hexpand">1</property>
+                    <property name="vexpand">1</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkNotebook" id="cropnotebook">
+                        <property name="focusable">1</property>
+                        <property name="tab-pos">right</property>
+                        <child>
+                          <object class="GtkNotebookPage">
+                            <property name="child">
+                              <object class="GtkBox" id="activefieldsbox">
+                                <property name="hexpand">1</property>
+                                <property name="vexpand">1</property>
+                                <property name="orientation">vertical</property>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                              </object>
+                            </property>
+                            <property name="tab">
+                              <object class="GtkLabel" id="activefieldslabel1">
+                                <property name="label" translatable="1">Active Fields</property>
+                              </object>
+                            </property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkNotebookPage">
+                            <property name="position">1</property>
+                            <property name="child">
+                              <object class="GtkGrid" id="fieldmanagementgrid">
+                                <property name="hexpand">1</property>
+                                <property name="vexpand">1</property>
+                                <property name="orientation">vertical</property>
+                                <property name="row-homogeneous">1</property>
+                                <property name="column-homogeneous">1</property>
+                                <child>
+                                  <object class="GtkButton" id="removefieldbutton1">
+                                    <property name="label" translatable="1">Remove Field</property>
+                                    <property name="focusable">1</property>
+                                    <property name="receives-default">1</property>
+                                    <layout>
+                                      <property name="column">4</property>
+                                      <property name="row">0</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkButton" id="createfieldbutton1">
+                                    <property name="label" translatable="1">Create Field</property>
+                                    <property name="focusable">1</property>
+                                    <property name="receives-default">1</property>
+                                    <layout>
+                                      <property name="column">2</property>
+                                      <property name="row">0</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                              </object>
+                            </property>
+                            <property name="tab">
+                              <object class="GtkLabel" id="fieldmanagementlabel1">
+                                <property name="label" translatable="1">Field Management</property>
+                              </object>
+                            </property>
+                          </object>
+                        </child>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </property>
+                <property name="tab">
+                  <object class="GtkLabel" id="cropbutton1">
+                    <property name="label" translatable="1">Crop Production</property>
+                  </object>
+                </property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkNotebookPage">
+                <property name="position">1</property>
+                <property name="child">
+                  <object class="GtkNotebook" id="livestocknotebook">
+                    <property name="focusable">1</property>
+                    <property name="tab-pos">right</property>
+                    <child>
+                      <object class="GtkNotebookPage">
+                        <property name="child">
+                          <object class="GtkBox" id="animalinventorybox">
+                            <property name="hexpand">1</property>
+                            <property name="vexpand">1</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <placeholder/>
+                            </child>
+                            <child>
+                              <placeholder/>
+                            </child>
+                            <child>
+                              <placeholder/>
+                            </child>
+                          </object>
+                        </property>
+                        <property name="tab">
+                          <object class="GtkLabel" id="animalinventorylabel1">
+                            <property name="label" translatable="1">Animal Inventory</property>
+                          </object>
+                        </property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkNotebookPage">
+                        <property name="position">1</property>
+                        <property name="child">
+                          <object class="GtkBox" id="healthrecordsbox">
+                            <property name="hexpand">1</property>
+                            <property name="vexpand">1</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <placeholder/>
+                            </child>
+                            <child>
+                              <placeholder/>
+                            </child>
+                            <child>
+                              <placeholder/>
+                            </child>
+                          </object>
+                        </property>
+                        <property name="tab">
+                          <object class="GtkLabel" id="healthrecordslabel1">
+                            <property name="label" translatable="1">Health Records</property>
+                          </object>
+                        </property>
+                      </object>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                </property>
+                <property name="tab">
+                  <object class="GtkLabel" id="livestockbutton1">
+                    <property name="label" translatable="1">Livestock Production</property>
+                  </object>
+                </property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkNotebookPage">
+                <property name="position">2</property>
+                <property name="child">
+                  <object class="GtkListBox" id="tasklistbox">
+                    <property name="name">tasklistboxcontainer</property>
+                    <property name="hexpand">1</property>
+                    <property name="vexpand">1</property>
+                    <child>
+                      <object class="GtkListBoxRow" id="taskrow1">
+                        <property name="focusable">1</property>
+                        <property name="child">
+                          <object class="GtkLabel" id="nocurrenttaskslabel1">
+                            <property name="label" translatable="1">No Current Tasks</property>
+                          </object>
+                        </property>
+                      </object>
+                    </child>
+                  </object>
+                </property>
+                <property name="tab">
+                  <object class="GtkLabel" id="taskbutton1">
+                    <property name="label" translatable="1">Tasks</property>
+                  </object>
+                </property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </property>
+  </object>
+</interface>
