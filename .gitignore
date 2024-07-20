@@ -1,0 +1,8 @@
+# .gitignore
+./app
+window2.glade
+window2.glade~
+makefile.win
+field_editor.glade
+field_editor.glade~
+fieldeditor.glade
