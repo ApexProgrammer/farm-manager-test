@@ -2,9 +2,10 @@
 <interface>
   <requires lib="gtk" version="4.0"/>
   <object class="GtkDialog" id="fieldeditordialog">
+    <property name="title" translatable="1">Field Editor</property>
     <child internal-child="content_area">
       <object class="GtkBox">
-        <property name="visible">0</property>
+        <property name="visible">1</property>
         <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child>
